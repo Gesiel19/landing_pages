@@ -22,6 +22,10 @@ module: {
     //sirve para aclararle a Webpack cómo debe procesar los loaders que queramos usar para un proyecto.
     rules: [
         {
+            test: /\.html$/,
+            use: ['html-loader'],
+          },
+        {
             test: /\.js$/i,
             loader: 'babel-loader'
         },
@@ -40,6 +44,7 @@ plugins: [
     new HTMLWebpackPlugin({
         hash: true,
         template: './src/index.html',
+        filename: "index.html",
         minify: {
             collapseWhitespace:
                 true,
