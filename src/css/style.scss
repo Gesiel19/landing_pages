@@ -1,34 +1,89 @@
 @import "variables.scss";
 
-body{
+body {
     background-color: $color_primary;
-   
+
 }
 
-.header__nav{
+.header__nav {
     display: flex;
     justify-content: space-between;
+    width: 100%;
     gap: 3px;
-    
+
     a {
         text-decoration: none;
-        color:black;
+        color: black;
     }
 
     li {
         display: flex;
     }
-   
+
+    div {
+        display: flex;
+    }
+
+    .li__features {
+        display: flex;
+        flex-direction: column;
+
+        div {
+            align-items: center;
+        }
+    }
+
+    #list__desplegable {
+        ul{
+        padding: 0px;
+        }
+
+        li {
+            display: flex;
+            padding: 0px;
+           // gap: -15%;
+            align-items: center;
+
+            figure {
+                width: 15px;
+
+                img {
+                    width: 100%;
+                }
+            }
+            a{
+                //margin-left: -15px;
+                justify-content: start;
+            }
+        }
+
+    }
+
 }
 
-main{
+.divRight__ul,
+.divLeft__ul {
     display: flex;
 }
 
 
-@mixin theme($theme: grey){
+
+
+main {
+    display: flex;
+}
+
+
+
+
+@mixin theme($theme: grey) {
     background: $color_primary;
     box-shadow: 0 0 1px rgba($theme, .25);
     border: 1px solid $theme;
-} 
+    padding: 8px;
+    border-radius: 18%;
+}
 
+#border_button {
+    @include theme;
+}

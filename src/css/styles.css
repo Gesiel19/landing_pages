@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Roboto:wght@300&family=Rubik&display=swap");
 body {
-  background-color: #ec9706;
+  background-color: white;
 }
 
 .header__nav {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   gap: 3px;
 }
 .header__nav a {
@@ -15,9 +16,24 @@ body {
 .header__nav li {
   display: flex;
 }
+.header__nav div {
+  display: flex;
+}
+
+.divRight__ul, .divLeft__ul {
+  display: flex;
+}
 
 main {
   display: flex;
+}
+
+#border_button {
+  background: white;
+  box-shadow: 0 0 1px rgba(128, 128, 128, 0.25);
+  border: 1px solid grey;
+  padding: 8px;
+  border-radius: 18%;
 }
 
 /*# sourceMappingURL=styles.css.map */
