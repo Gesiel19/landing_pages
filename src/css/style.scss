@@ -24,34 +24,67 @@ body {
         display: flex;
     }
 
-    .li__features {
+    .li__features,
+    .li__company {
         display: flex;
         flex-direction: column;
 
+
         div {
             align-items: center;
+            display: flex;
+            gap: -5px;
         }
     }
 
+    @mixin theme($theme: 590px) {
+        left: $theme;
+        align-self: center;
+        height: 20px;
+        position: absolute;
+        top: 40px;
+    }
+
+
+
+    .li__about {
+        @include theme ($theme: 520px);
+    }
+
+    .li__careers {
+        @include theme;
+
+    }
+
+    .li___login {
+        @include theme ($theme: 1330px);
+    }
+
+    .li__register {
+        @include theme ($theme: 1390px);
+    }
+
     #list__desplegable {
-        ul{
-        padding: 0px;
+        ul {
+            padding: 0px;
         }
 
         li {
             display: flex;
             padding: 0px;
-           // gap: -15%;
+            // gap: -15%;
             align-items: center;
 
             figure {
                 width: 15px;
 
+
                 img {
                     width: 100%;
                 }
             }
-            a{
+
+            a {
                 //margin-left: -15px;
                 justify-content: start;
             }
@@ -59,31 +92,62 @@ body {
 
     }
 
+
+
+    #list__desplegable2 {
+        ul {
+            padding: 0px;
+        }
+
+        li {
+            display: flex;
+            padding: 0px;
+            // gap: -15%;
+            align-items: center;
+
+        }
+
+    }
+
+    .divRight__ul,
+    .divLeft__ul {
+        display: flex;
+    }
+
+
+
+
+    main {
+        display: flex;
+    }
+
+
+
+
+    @mixin theme($theme: grey) {
+        background: $color_primary;
+        box-shadow: 0 0 1px rgba($theme, .25);
+        border: 1px solid $theme;
+        padding: 8px;
+        top: 30px;
+        border-radius: 18%;
+    }
+
+    #border_button {
+        @include theme;
+    }
 }
 
-.divRight__ul,
-.divLeft__ul {
-    display: flex;
+.main__sectionText{
+    font-size: 32px;
+    width: 50%;
 }
 
-
-
-
-main {
-    display: flex;
+.main__sectionPrincipalImg{
+    width: 50%;
 }
 
-
-
-
-@mixin theme($theme: grey) {
-    background: $color_primary;
-    box-shadow: 0 0 1px rgba($theme, .25);
-    border: 1px solid $theme;
-    padding: 8px;
-    border-radius: 18%;
-}
-
-#border_button {
-    @include theme;
+.section__p{
+    font-size: 16px;
+    width: 120px;
 }
