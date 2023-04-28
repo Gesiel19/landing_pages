@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Roboto:wght@300&family=Rubik&display=swap");
+* {
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: white;
+  font-family: "Epilogue";
 }
 
 .header__nav {
@@ -8,57 +15,173 @@ body {
   justify-content: space-between;
   width: 100%;
   gap: 3px;
+  align-items: center;
 }
-.header__nav a {
+.header__nav .logoSnap {
+  padding-top: 22px;
+  padding-left: 50px;
+}
+.header__nav .nav__divLeft {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav .divLeft__ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 25px;
+}
+.header__nav .divLeft__ul span {
   text-decoration: none;
   color: black;
 }
-.header__nav li {
+.header__nav .divLeft__ul li {
   display: flex;
 }
-.header__nav div {
-  display: flex;
-}
-.header__nav .li__features {
-  display: flex;
-  flex-direction: column;
-}
-.header__nav .li__features div {
+.header__nav .divLeft__ul .li__listaDesplegable {
+  width: 115px;
   align-items: center;
 }
-.header__nav #list__desplegable ul, .header__nav #list__desplegable2 ul {
-  padding: 0px;
+.header__nav .divLeft__ul .li__listaDesplegable:hover {
+  cursor: pointer;
 }
-.header__nav #list__desplegable li, .header__nav #list__desplegable2 li {
+.header__nav .divLeft__ul .li__listaDesplegable .li__div {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: stretch;
+  align-items: center;
+}
+.header__nav .divLeft__ul .li__listaDesplegable .li__div #figure__li {
+  width: 10%;
+  background: transparent;
+  align-items: center;
+  justify-content: left;
+}
+.header__nav .divLeft__ul .li__listaDesplegable .li__div #figure__li:hover {
+  cursor: pointer;
+}
+.header__nav .divLeft__ul .li__about:hover {
+  cursor: pointer;
+}
+.header__nav .divLeft__ul .li__careers:hover {
+  cursor: pointer;
+}
+.header__nav .divLeft__ul .li___login {
+  margin-left: 300px;
+}
+.header__nav .divLeft__ul .li___login:hover {
+  cursor: pointer;
+}
+.header__nav .divLeft__ul #list__desplegable ul {
+  padding: 0px;
+  position: absolute;
+  list-style: none;
+}
+.header__nav .divLeft__ul #list__desplegable li {
   display: flex;
   padding: 0px;
   align-items: center;
 }
-.header__nav #list__desplegable li figure, .header__nav #list__desplegable2 li figure {
+.header__nav .divLeft__ul #list__desplegable li figure {
   width: 15px;
 }
-.header__nav #list__desplegable li figure img, .header__nav #list__desplegable2 li figure img {
+.header__nav .divLeft__ul #list__desplegable li figure img {
   width: 100%;
 }
-.header__nav #list__desplegable li a, .header__nav #list__desplegable2 li a {
+.header__nav .divLeft__ul #list__desplegable li a {
   justify-content: start;
 }
-
-.divRight__ul,
-.divLeft__ul {
+.header__nav .divLeft__ul #list__desplegable2 ul {
+  padding: 0px;
+  position: absolute;
+}
+.header__nav .divLeft__ul #list__desplegable2 li {
   display: flex;
+  padding: 0px;
+  align-items: center;
+}
+.header__nav #border_button {
+  right: 0px;
+  background: white;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+  border: 2px solid #7f7f7f;
+  width: 94px;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  top: 30px;
+  border-radius: 22%;
+  color: hsl(0, 0%, 41%);
+  font-weight: bold;
+}
+.header__nav #border_button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }
 
 main {
   display: flex;
+  padding-left: 12%;
 }
 
-#border_button {
-  background: white;
-  box-shadow: 0 0 1px rgba(128, 128, 128, 0.25);
-  border: 1px solid grey;
-  padding: 8px;
-  border-radius: 18%;
+.main__sectionText {
+  font-size: 32px;
+  width: 50%;
+}
+.main__sectionText .section__letra {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  justify-content: center;
+}
+.main__sectionText .section__letra h1 {
+  font-size: 60px;
+  width: 420px;
+}
+.main__sectionText .section__letra .section__p {
+  font-size: 15px;
+  width: 372px;
+  color: hsl(0, 0%, 41%);
+  line-height: 24px;
+}
+.main__sectionText .section__letra #learn__button {
+  color: black;
+  right: 0px;
+  background: black;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+  border: 2px solid #7f7f7f;
+  width: 100px;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  top: 30px;
+  border-radius: 22%;
+  color: white;
+  font-weight: bold;
+}
+.main__sectionText .section__letra #learn__button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.main__sectionText .main__sectionSecondariesImg {
+  display: flex;
+  gap: 5px;
+}
+
+.main__sectionPrincipalImg {
+  width: 40%;
+}
+.main__sectionPrincipalImg .figure__central {
+  width: 100%;
+}
+.main__sectionPrincipalImg .img__central {
+  width: 120%;
 }
 
 /*# sourceMappingURL=styles.css.map */

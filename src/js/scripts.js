@@ -16,23 +16,26 @@ if(event.target.classList.contains("buttonDown1")){
             <figure>
                <img class="buttonDown" src="./assest/icon-todo.svg">
            </figure> 
-           <a> Todo List  </a>
-        <li>  
+           <span> Todo List  </span>
+        </li>  
+        <li>
             <figure>
                <img src="./assest/icon-calendar.svg">
            </figure> 
-           <a> Calendar </a>
+           <span> Calendar </span>
+        </li>
         <li>  
             <figure>
                <img src="./assest/icon-reminders.svg">
            </figure>
-           <a> Reminders </a>
+           <span> Reminders </span>
+        </li>
         <li>  
             <figure>
                <img src="./assest/icon-planning.svg">
            </figure> 
-           <a> Planning </a> 
-            
+           <span> Planning </span> 
+        </li>
         </ul>
         </div> `
 }
@@ -52,23 +55,26 @@ document.addEventListener("click", (event)=>{
                 <figure>
                    <img class="buttonDown" src="./assest/icon-todo.svg">
                </figure> 
-               <a> Todo List  </a>
-            <li>  
+               <span> Todo List  </span>
+            </li>
+            <li>
                 <figure>
                    <img src="./assest/icon-calendar.svg">
                </figure> 
-               <a> Calendar </a>
-            <li>  
+               <span> Calendar </span>
+            </li> 
+            <li> 
                 <figure>
                    <img src="./assest/icon-reminders.svg">
                </figure>
-               <a> Reminders </a>
-            <li>  
+               <span> Reminders </span>
+            </li>
+            <li> 
                 <figure>
                    <img src="./assest/icon-planning.svg">
                </figure> 
-               <a> Planning </a> 
-                
+               <span> Planning </span> 
+            </li>
             </ul>
             </div> `
     }

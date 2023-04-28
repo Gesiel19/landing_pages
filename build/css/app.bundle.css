@@ -6,12 +6,13 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/styles.css (1) ***!
   \**************************************************************************/
 body {
-  background-color: #ec9706;
+  background-color: white;
 }
 
 .header__nav {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   gap: 3px;
 }
 .header__nav a {
@@ -21,8 +22,48 @@ body {
 .header__nav li {
   display: flex;
 }
+.header__nav div {
+  display: flex;
+}
+.header__nav .li__features {
+  display: flex;
+  flex-direction: column;
+}
+.header__nav .li__features div {
+  align-items: center;
+}
+.header__nav #list__desplegable ul, .header__nav #list__desplegable2 ul {
+  padding: 0px;
+}
+.header__nav #list__desplegable li, .header__nav #list__desplegable2 li {
+  display: flex;
+  padding: 0px;
+  align-items: center;
+}
+.header__nav #list__desplegable li figure, .header__nav #list__desplegable2 li figure {
+  width: 15px;
+}
+.header__nav #list__desplegable li figure img, .header__nav #list__desplegable2 li figure img {
+  width: 100%;
+}
+.header__nav #list__desplegable li a, .header__nav #list__desplegable2 li a {
+  justify-content: start;
+}
+
+.divRight__ul,
+.divLeft__ul {
+  display: flex;
+}
 
 main {
   display: flex;
+}
+
+#border_button {
+  background: white;
+  box-shadow: 0 0 1px rgba(128, 128, 128, 0.25);
+  border: 1px solid grey;
+  padding: 8px;
+  border-radius: 18%;
 }
 
