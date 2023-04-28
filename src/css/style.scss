@@ -1,153 +1,267 @@
 @import "variables.scss";
 
+* {
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
 body {
     background-color: $color_primary;
+    font-family: $font_primary;
 
 }
 
+//--------------------------------------Header-----------------------//
 .header__nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
     gap: 3px;
+    align-items: center;
 
-    a {
-        text-decoration: none;
-        color: black;
+    .logoSnap {
+        padding-top: 22px;
+        padding-left: 50px;
     }
 
-    li {
+    .nav__divLeft {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    div {
+
+    //--------------------------------------Sección Izquierda-----------------------//
+    .divLeft__ul {
         display: flex;
-    }
-
-    .li__features,
-    .li__company {
-        display: flex;
-        flex-direction: column;
-
-
-        div {
-            align-items: center;
-            display: flex;
-            gap: -5px;
-        }
-    }
-
-    @mixin theme($theme: 590px) {
-        left: $theme;
-        align-self: center;
-        height: 20px;
-        position: absolute;
-        top: 40px;
-    }
+        align-items: center;
+        list-style: none;
+        gap: 25px;
 
 
 
-    .li__about {
-        @include theme ($theme: 520px);
-    }
-
-    .li__careers {
-        @include theme;
-
-    }
-
-    .li___login {
-        @include theme ($theme: 1330px);
-    }
-
-    .li__register {
-        @include theme ($theme: 1390px);
-    }
-
-    #list__desplegable {
-        ul {
-            padding: 0px;
+        span {
+            text-decoration: none;
+            color: black;
         }
 
         li {
             display: flex;
-            padding: 0px;
-            // gap: -15%;
+        }
+
+
+
+        //---------------------NavBar-------//
+
+
+        .li__listaDesplegable {
+            width: 115px;
+            //margin-top: 12px;
             align-items: center;
 
-            figure {
-                width: 15px;
+            &:hover {
+                cursor: pointer;
+
+            }
 
 
-                img {
-                    width: 100%;
+
+            .li__div {
+                width: 100%;
+                display: flex;
+                margin: 0;
+                padding: 0;
+                justify-content: stretch;
+               align-items: center;
+
+                .figure__li {
+                    width: 10%;
+                    background: transparent;
+                    align-items: center;
+                    justify-content: left;
+
+
+                    &:hover {
+                        cursor: pointer;
+
+                    }
+
+                }
+
+            }
+
+
+        }
+
+        .li__about {
+
+            &:hover {
+                cursor: pointer;
+
+            }
+        }
+
+        .li__careers {
+            &:hover {
+                cursor: pointer;
+
+            }
+
+
+
+        }
+
+
+        .li___login {
+            margin-left: 300px;
+
+            &:hover {
+                cursor: pointer;
+
+            }
+
+        }
+
+
+
+
+
+
+        #list__desplegable {
+            ul {
+                padding: 0px;
+                position: absolute;
+                list-style: none;
+            }
+
+            li {
+                display: flex;
+                padding: 0px;
+                // gap: -15%;
+                align-items: center;
+
+                figure {
+                    width: 15px;
+
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                a {
+                    //margin-left: -15px;
+                    justify-content: start;
                 }
             }
 
-            a {
-                //margin-left: -15px;
-                justify-content: start;
+        }
+
+
+
+        #list__desplegable2 {
+            ul {
+                padding: 0px;
+                position: absolute;
             }
-        }
 
-    }
+            li {
+                display: flex;
+                padding: 0px;
+                // gap: -15%;
+                align-items: center;
 
-
-
-    #list__desplegable2 {
-        ul {
-            padding: 0px;
-        }
-
-        li {
-            display: flex;
-            padding: 0px;
-            // gap: -15%;
-            align-items: center;
+            }
 
         }
 
     }
 
-    .divRight__ul,
-    .divLeft__ul {
-        display: flex;
-    }
-
-
-
-
-    main {
-        display: flex;
-    }
-
-
-
-
-    @mixin theme($theme: grey) {
-        background: $color_primary;
-        box-shadow: 0 0 1px rgba($theme, .25);
-        border: 1px solid $theme;
-        padding: 8px;
-        top: 30px;
-        border-radius: 18%;
-    }
 
     #border_button {
-        @include theme;
+        @include button;
+
     }
+
+
+
+
+
+
+
+
+
+
 }
 
-.main__sectionText{
+main {
+    display: flex;
+    padding-left: 12%;
+
+}
+
+.main__sectionText {
     font-size: 32px;
     width: 50%;
+
+    .section__letra {
+
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        justify-content: center;
+
+        h1 {
+            font-size: 60px;
+            width: 420px;
+        }
+
+
+        .section__p {
+            font-size: 15px;
+            width: 372px;
+            color: $color;
+            line-height: 24px;
+
+        }
+
+        #learn__button {
+            color: black;
+
+
+
+            @include button ($backgroundc: black, $colorletra: white, $pixel: 100px)
+        }
+
+
+
+
+    }
+
+    .main__sectionSecondariesImg {
+        display: flex;
+        gap: 5px;
+
+    }
+
+
 }
 
-.main__sectionPrincipalImg{
-    width: 50%;
-}
+.main__sectionPrincipalImg {
+    width: 40%;
 
-.section__p{
-    font-size: 16px;
-    width: 120px;
+    .figure__central {
+        width: 100%;
+    }
+
+    .img__central {
+        width: 120%;
+    }
+
+
+
 }
