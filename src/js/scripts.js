@@ -11,12 +11,12 @@ const getLiLogin = document.querySelector(".li___login");
 dropdownButton1.addEventListener("click", function () {
     if (containerUlFeature.style.display === 'none') {
         containerUlFeature.style.display = 'block';
-        getLiCareers.style.position = 'absolute';
-        getLiCareers.style.left = '155px';
-        getLiAbout.style.position = 'absolute';
-        getLiAbout.style.left = '255px';
-        getLiLogin.style.position = 'absolute';
-        getLiLogin.style.left = '300px';
+        // getLiCareers.style.position = 'relative';
+        // getLiCareers.style.left = '99px';
+        // getLiAbout.style.position = 'relative';
+        // getLiAbout.style.left = '200px';
+        // getLiLogin.style.position = 'relative';
+        // getLiLogin.style.left = '200px';
       } else {
         containerUlFeature.style.display = 'none';
       }
@@ -43,8 +43,7 @@ getBars.addEventListener("click", () =>{
         getluContainer.style.display = 'block';
         getluContainer.style.opacity = '1';
         // getRegister.style.position ="relative";
-        // getRegister.s
-        tyle.left ="1000";
+        // getRegister.style.left ="1000";
         // getluContainer.style.flex-direction = 'column';
       } else {
         getluContainer.style.display = 'none';
