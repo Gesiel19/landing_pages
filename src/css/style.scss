@@ -157,7 +157,7 @@ body {
 
 
         .li___login {
-            margin-left: 800px;
+            margin-left: 500px;
 
             &:hover {
                 cursor: pointer;
@@ -315,12 +315,17 @@ main {
             color: $color;
             line-height: 24px;
             height: 30%;
+            position: relative;
+            top: 90px;
+            
 
         }
 
         #learn__button {
             color: black;
-
+            position: relative;
+            top: 90px;
+            left: 10px;
 
 
             @include button ($backgroundc: black, $colorletra: white, $pixel: 100px)
@@ -334,6 +339,9 @@ main {
     .main__sectionSecondariesImg {
         display: flex;
         gap: 5px;
+        position: relative;
+            top: 60px;
+            
 
     }
 
@@ -349,17 +357,19 @@ main {
     .figure__central {
         width: 100%;
 
+        .img__central {
+            width: 120%;
+    
+        }
+    
+        .img__central2 {
+            opacity: 0;
+            display: none;
+        } 
+
     }
 
-    .img__central {
-        width: 120%;
-
-    }
-
-    .img__central2 {
-        opacity: 0;
-        display: none;
-    }
+  
 
 
 

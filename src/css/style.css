@@ -1,10 +1,4 @@
-/*!**********************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/styles.css ***!
-  \**********************************************************************/
-@import url(https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Roboto:wght@300&family=Rubik&display=swap);
-/*!**************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/styles.css (1) ***!
-  \**************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Roboto:wght@300&family=Rubik&display=swap");
 * {
   padding: 10px;
   margin: 0;
@@ -64,7 +58,7 @@ body {
 .header__nav .buttonDown1 {
   opacity: 1;
   position: relative;
-  z-index: 1;
+  z-index: 1000;
   visibility: visible;
 }
 .header__nav .divLeft__ul {
@@ -270,10 +264,10 @@ main {
 .main__sectionPrincipalImg .figure__central {
   width: 100%;
 }
-.main__sectionPrincipalImg .img__central {
+.main__sectionPrincipalImg .figure__central .img__central {
   width: 120%;
 }
-.main__sectionPrincipalImg .img__central2 {
+.main__sectionPrincipalImg .figure__central .img__central2 {
   opacity: 0;
   display: none;
 }
@@ -334,6 +328,11 @@ main {
   }
 }
 @media (max-width: 675px) {
+  .header__nav .divLeft__ul {
+    display: none;
+    position: absolute;
+    top: 70px;
+  }
   header .logoSnap {
     margin-left: -15%;
   }
@@ -351,6 +350,10 @@ main {
   .li__careers {
     left: -5px;
   }
+  .header__nav #ulCompany_container {
+    line-height: 10px;
+    top: 29px;
+  }
   main {
     margin-top: -30px;
     width: 110%;
@@ -359,38 +362,52 @@ main {
   }
   main .main__sectionText {
     padding: 2%;
-  }
-  main h1 {
-    font-size: smaller;
     width: 100%;
+  }
+  main .main__sectionText .section__letra h1 {
+    font-size: 60px;
+    width: 65%;
+    height: 30%;
+    font-size: 36px;
+    width: 90%;
     position: relative;
-    top: 490px;
+    top: 440px;
+    display: flex;
+    text-align: center;
+    padding: 5%;
+    margin-left: 32px;
   }
   main .section__p {
-    width: 100%;
+    width: 120%;
     position: relative;
-    top: 500px;
+    top: 437px;
+    display: flex;
+    text-align: center;
+    padding: 5%;
+    margin-left: 80px;
   }
   main #learn__button {
     position: relative;
-    top: 510px;
+    top: 412px;
+    padding: 5%;
+    margin-left: 169px;
   }
   main .main__sectionSecondariesImg {
     position: relative;
-    top: 520px;
+    top: 420px;
   }
   main .main__sectionPrincipalImg {
-    width: 50%;
+    width: 90%;
     padding: 5%;
     position: absolute;
     top: 200px;
   }
-  main .main__sectionPrincipalImg .main__sectionPrincipalImg .img__central2 {
-    width: 60%;
+  main .main__sectionPrincipalImg .figure__central .img__central2 {
+    width: 100%;
     display: flex;
     opacity: 1;
   }
-  main .main__sectionPrincipalImg .main__sectionPrincipalImg .img__central2 .img__central {
+  main .main__sectionPrincipalImg .figure__central .img__central {
     opacity: 0;
     display: none;
   }
@@ -401,8 +418,8 @@ main {
   main .ulFeatures_div,
   main .ulCompany_div {
     display: flex;
-    flex-direction: column;
     line-height: 10px;
   }
 }
 
+/*# sourceMappingURL=style.css.map */
