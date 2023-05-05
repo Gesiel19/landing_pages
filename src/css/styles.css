@@ -378,36 +378,42 @@ main {
     font-size: 36px;
     width: 90%;
     position: relative;
-    top: 440px;
+    top: 340px;
     display: flex;
     text-align: center;
     padding: 5%;
-    margin-left: 32px;
   }
   main .section__p {
     width: 120%;
     position: relative;
-    top: 437px;
+    top: 400px;
     display: flex;
     text-align: center;
     padding: 5%;
     margin-left: 80px;
+    margin-top: 200px;
   }
   main #learn__button {
     position: relative;
-    top: 412px;
+    top: 370px;
     padding: 5%;
-    margin-left: 169px;
+    margin-left: 140px;
+    margin-top: -20px;
   }
   main .main__sectionSecondariesImg {
     position: relative;
-    top: 420px;
+    top: 520px;
+    margin-top: 60px;
   }
   main .main__sectionPrincipalImg {
     width: 90%;
     padding: 5%;
     position: absolute;
-    top: 200px;
+    top: 170px;
+  }
+  main .main__sectionPrincipalImg .figure__central {
+    width: 80%;
+    padding: 5%;
   }
   main .main__sectionPrincipalImg .figure__central .img__central2 {
     width: 100%;
