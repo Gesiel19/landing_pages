@@ -11,7 +11,6 @@
 body {
     background-color: $color_primary;
     font-family: $font_primary;
-
 }
 
 //--------------------------------------Header-----------------------//
@@ -73,7 +72,7 @@ body {
         opacity: 1;
         position: relative;
         // left: 100px;
-        z-index: 1;
+        z-index: 1000;
         visibility: visible;
     }
 
@@ -93,7 +92,6 @@ body {
         li {
             display: flex;
         }
-
 
 
         //---------------------NavBar-------//
@@ -239,6 +237,7 @@ body {
         justify-content: center;
         height: 20%;
 
+
         ul {
 
             border: 2px rgb(57, 61, 59);
@@ -279,6 +278,7 @@ body {
         border: 2px rgb(57, 61, 59);
         filter: drop-shadow(2px 3px 4px rgb(32, 37, 36))
     }
+
 }
 
 main {
@@ -438,6 +438,11 @@ main {
 }
 
 @media (max-width: 675px) {
+    .header__nav .divLeft__ul{
+        display: none;
+        position: absolute;
+        top:70px;
+    }
     // nav .nav-list {
     //     display: grid;
     //     position: absolute;
@@ -480,6 +485,11 @@ main {
     .li__careers {
         left: -5px;
     }
+    .header__nav #ulCompany_container{
+        line-height: 10px;
+        top: 29px;
+
+    }
 
     main {
         // position: relative;
@@ -493,52 +503,67 @@ main {
         // align-items: center;
         .main__sectionText {
             padding: 2%;
+            width: 100%;
 
         }
 
-        h1 {
-            font-size: smaller;
-            width: 100%;
+        .main__sectionText .section__letra h1 {
+            font-size: 60px;
+            width: 65%;
+            height: 30%;
+            font-size: 36px;
+            width: 90%;
             position: relative;
-            top: 490px;
+            top: 440px;
+            display: flex;
+            text-align: center;
+            padding: 5%;
+            margin-left: 32px;
         }
 
         .section__p {
-            width: 100%;
+            width: 120%;
             position: relative;
-            top: 500px;
+            top: 437px;
+            display: flex;
+            text-align: center;
+            padding: 5%;
+            margin-left: 80px;
         }
 
         #learn__button {
             position: relative;
-            top: 510px;
+            top: 412px;
+            padding: 5%;
+            margin-left: 169px;
         }
 
         .main__sectionSecondariesImg {
             position: relative;
-            top: 520px;
+            top: 420px;
         }
 
         .main__sectionPrincipalImg {
-            width: 50%;
+            width: 90%;
             padding: 5%;
             position: absolute;
             top: 200px;
 
             //    ju
-            .main__sectionPrincipalImg .img__central2 {
+            .figure__central .img__central2 {
                 // height: 300px;
                 // width: 55%;
-                width: 60%;
+                width: 100%;
                 display: flex;
                 opacity: 1;
+            }
 
-                .img__central {
+            .figure__central .img__central {
                     opacity: 0;
                     display: none;
 
-                }
             }
+            
         }
 
 
@@ -550,7 +575,7 @@ main {
         .ulFeatures_div,
         .ulCompany_div {
             display: flex;
-            flex-direction: column;
+            // flex-direction: column;
             line-height: 10px;
         }
 
